@@ -12,6 +12,7 @@ import Foundation
 class HomeViewModel: ObservableObject {
     
     @Published var charactersArray: [HomeCharacter] = []
+    @Published var episodesArray: [HomeEpisode] = []
     
     init() {
         getCharacters()
@@ -25,7 +26,6 @@ class HomeViewModel: ObservableObject {
                 for character in data.results {
                     charactersArray.append(HomeCharacter(id: character.id, name: character.name, image: character.image))
                 }
-                //print(data)
             } catch {
                 print(String(describing: error))
             }
@@ -36,7 +36,12 @@ class HomeViewModel: ObservableObject {
         Task {
             do {
                 let data = try await WebServiceEpisodeGlobal.shared.getEpisodes()
-                print(data)
+            //episodesTempArray: [HomeEpisode] = []
+                for episode in data.results {
+                    
+                    episodesArray.append(HomeEpisode(id: episode.id, name: episode.name, episode: episode.episode, characters: episode.characters))
+                    
+                }
             } catch {
                 print(String(describing: error))
             }

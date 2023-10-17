@@ -39,13 +39,29 @@ actor WebServiceCharacter {
            task.resume()
            
         }
+    }
+    
+    func getCharacterByUrl(urlString: String) async throws -> Result {
         
-        
-        
-        
-       
-        
-        
+        try await withCheckedThrowingContinuation { continuation in
+            guard let url = URL(string: urlString) else {
+                return
+            }
+            
+            URLSession.shared.dataTask(with: url) { data, _, error in
+                guard let data = data, error == nil else {
+                    return
+                }
+                let decoder = JSONDecoder()
+                do {
+                    let result = try decoder.decode(Result.self, from: data)
+                    continuation.resume(returning: result)
+                } catch {
+                    continuation.resume(throwing: error)
+                }
+                
+            }.resume()
+        }
         
     }
     

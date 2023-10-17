@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct HomeEpisode {
+struct HomeEpisode: Identifiable {
     let id: Int
     let name: String
     let episode: String

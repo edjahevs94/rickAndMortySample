@@ -25,6 +25,12 @@
 		BE3994C72ADDE54400CDCF9C /* WebServiceEpisodeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3994C62ADDE54400CDCF9C /* WebServiceEpisodeResponse.swift */; };
 		BE3994CD2ADDE71500CDCF9C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3994CC2ADDE71500CDCF9C /* MainView.swift */; };
 		BE3994CF2ADDEE2400CDCF9C /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3994CE2ADDEE2400CDCF9C /* Episode.swift */; };
+		BE3994D52ADEEDFA00CDCF9C /* HeaderHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3994D42ADEEDFA00CDCF9C /* HeaderHome.swift */; };
+		BE3994D72ADEEE1A00CDCF9C /* CarouselHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3994D62ADEEE1A00CDCF9C /* CarouselHome.swift */; };
+		BE3994D92ADEEE7700CDCF9C /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3994D82ADEEE7700CDCF9C /* CharacterCell.swift */; };
+		BE3994DB2ADEEE9600CDCF9C /* EpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3994DA2ADEEE9600CDCF9C /* EpisodeCell.swift */; };
+		BE3994DD2ADF1FE900CDCF9C /* HeaderLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3994DC2ADF1FE900CDCF9C /* HeaderLocation.swift */; };
+		BE3994DF2ADF322C00CDCF9C /* HomeEpisodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3994DE2ADF322C00CDCF9C /* HomeEpisodes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +53,12 @@
 		BE3994C62ADDE54400CDCF9C /* WebServiceEpisodeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceEpisodeResponse.swift; sourceTree = "<group>"; };
 		BE3994CC2ADDE71500CDCF9C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BE3994CE2ADDEE2400CDCF9C /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		BE3994D42ADEEDFA00CDCF9C /* HeaderHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderHome.swift; sourceTree = "<group>"; };
+		BE3994D62ADEEE1A00CDCF9C /* CarouselHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselHome.swift; sourceTree = "<group>"; };
+		BE3994D82ADEEE7700CDCF9C /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
+		BE3994DA2ADEEE9600CDCF9C /* EpisodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeCell.swift; sourceTree = "<group>"; };
+		BE3994DC2ADF1FE900CDCF9C /* HeaderLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLocation.swift; sourceTree = "<group>"; };
+		BE3994DE2ADF322C00CDCF9C /* HomeEpisodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEpisodes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +112,7 @@
 		BE39949E2ADD86E100CDCF9C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				BE3994D02ADEE00100CDCF9C /* EpisodeScene */,
 				BE3994C82ADDE6A800CDCF9C /* MainScene */,
 				BE3994BA2ADDDD2000CDCF9C /* LocationsScene */,
 				BE3994A02ADD8FE800CDCF9C /* HomeScene */,
@@ -131,6 +144,11 @@
 			isa = PBXGroup;
 			children = (
 				BE3994A42ADD9B9300CDCF9C /* HomeView.swift */,
+				BE3994D42ADEEDFA00CDCF9C /* HeaderHome.swift */,
+				BE3994D62ADEEE1A00CDCF9C /* CarouselHome.swift */,
+				BE3994D82ADEEE7700CDCF9C /* CharacterCell.swift */,
+				BE3994DA2ADEEE9600CDCF9C /* EpisodeCell.swift */,
+				BE3994DE2ADF322C00CDCF9C /* HomeEpisodes.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				BE3994C42ADDDDCF00CDCF9C /* LocationsView.swift */,
+				BE3994DC2ADF1FE900CDCF9C /* HeaderLocation.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,6 +254,37 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BE3994D02ADEE00100CDCF9C /* EpisodeScene */ = {
+			isa = PBXGroup;
+			children = (
+				BE3994D32ADEE02A00CDCF9C /* Models */,
+				BE3994D22ADEE02100CDCF9C /* ViewModels */,
+				BE3994D12ADEE01900CDCF9C /* Views */,
+			);
+			path = EpisodeScene;
+			sourceTree = "<group>";
+		};
+		BE3994D12ADEE01900CDCF9C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BE3994D22ADEE02100CDCF9C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BE3994D32ADEE02A00CDCF9C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,18 +357,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE3994DF2ADF322C00CDCF9C /* HomeEpisodes.swift in Sources */,
 				BE3994B62ADDD5B600CDCF9C /* Character.swift in Sources */,
 				BE3994CF2ADDEE2400CDCF9C /* Episode.swift in Sources */,
 				BE3994BF2ADDDD9100CDCF9C /* Location.swift in Sources */,
 				BE3994C52ADDDDCF00CDCF9C /* LocationsView.swift in Sources */,
 				BE3994A52ADD9B9300CDCF9C /* HomeView.swift in Sources */,
+				BE3994DB2ADEEE9600CDCF9C /* EpisodeCell.swift in Sources */,
 				BE3994932ADD86D400CDCF9C /* ContentView.swift in Sources */,
+				BE3994D72ADEEE1A00CDCF9C /* CarouselHome.swift in Sources */,
 				BE3994AA2ADD9C7300CDCF9C /* WebServiceCharacter.swift in Sources */,
 				BE3994AC2ADD9D7A00CDCF9C /* WebServiceLocation.swift in Sources */,
+				BE3994DD2ADF1FE900CDCF9C /* HeaderLocation.swift in Sources */,
 				BE3994AE2ADD9EF500CDCF9C /* WebServiceEpisode.swift in Sources */,
 				BE3994C12ADDDDAA00CDCF9C /* LocationsViewModel.swift in Sources */,
+				BE3994D52ADEEDFA00CDCF9C /* HeaderHome.swift in Sources */,
 				BE3994C72ADDE54400CDCF9C /* WebServiceEpisodeResponse.swift in Sources */,
 				BE3994B92ADDD89600CDCF9C /* WebServiceLocationResponse.swift in Sources */,
+				BE3994D92ADEEE7700CDCF9C /* CharacterCell.swift in Sources */,
 				BE3994912ADD86D400CDCF9C /* rickAndMortySampleApp.swift in Sources */,
 				BE3994B02ADDAB3B00CDCF9C /* WebServiceCharacterResponse.swift in Sources */,
 				BE3994CD2ADDE71500CDCF9C /* MainView.swift in Sources */,

@@ -12,7 +12,35 @@ struct LocationsView: View {
     @StateObject var viewModel = LocationsViewModel()
     
     var body: some View {
-        Text("Locations")
+        
+        VStack {
+            HeaderLocation()
+            if !viewModel.isLoading {
+                List(viewModel.locationsArray, children: \.residents) { location in
+                    HStack {
+                        AsyncImage(url: URL(string: location.image)) { image in
+                            image.resizable()
+                                .clipShape(Circle())
+                                .frame(width: 70, height: 70)
+                        } placeholder: {
+                            //ProgressView()
+                            //.frame(width: 50, height: 50)
+                            Image("placeHolder")
+                                .resizable()
+                                .clipShape(Circle())
+                                .frame(width: 70, height: 70)
+                        }
+                        
+                        Text(location.name)
+                    }
+                }.listStyle(.plain)
+            }else {
+
+                ProgressView()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+            }
+        }
+        
     }
 }
 

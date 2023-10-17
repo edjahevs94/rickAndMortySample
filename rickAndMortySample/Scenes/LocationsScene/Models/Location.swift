@@ -7,9 +7,12 @@
 
 import Foundation
 
-struct LocationModel {
+struct LocationModel: Identifiable {
     let id: Int
     let name: String
     let type: String
-    
+    let image: String
+    var residents: [LocationModel]?
 }
+
+

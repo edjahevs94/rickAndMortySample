@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct HomeCharacter {
+struct HomeCharacter: Identifiable {
     let id: Int
     let name: String
     let image: String
