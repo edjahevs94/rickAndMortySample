@@ -31,6 +31,7 @@
 		BE3994DB2ADEEE9600CDCF9C /* EpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3994DA2ADEEE9600CDCF9C /* EpisodeCell.swift */; };
 		BE3994DD2ADF1FE900CDCF9C /* HeaderLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3994DC2ADF1FE900CDCF9C /* HeaderLocation.swift */; };
 		BE3994DF2ADF322C00CDCF9C /* HomeEpisodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3994DE2ADF322C00CDCF9C /* HomeEpisodes.swift */; };
+		BE3994E22AE0287B00CDCF9C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3994E12AE0287B00CDCF9C /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		BE3994DA2ADEEE9600CDCF9C /* EpisodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeCell.swift; sourceTree = "<group>"; };
 		BE3994DC2ADF1FE900CDCF9C /* HeaderLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLocation.swift; sourceTree = "<group>"; };
 		BE3994DE2ADF322C00CDCF9C /* HomeEpisodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEpisodes.swift; sourceTree = "<group>"; };
+		BE3994E12AE0287B00CDCF9C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		BE39949F2ADD86EA00CDCF9C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				BE3994E02AE027CF00CDCF9C /* WebServiceSupportingFiles */,
 				BE3994B32ADDD52A00CDCF9C /* WebServiceEpisode */,
 				BE3994B22ADDD51B00CDCF9C /* WebServiceLocation */,
 				BE3994B12ADDD50300CDCF9C /* WebServiceCharacter */,
@@ -287,6 +290,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		BE3994E02AE027CF00CDCF9C /* WebServiceSupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				BE3994E12AE0287B00CDCF9C /* NetworkError.swift */,
+			);
+			path = WebServiceSupportingFiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -359,6 +370,7 @@
 			files = (
 				BE3994DF2ADF322C00CDCF9C /* HomeEpisodes.swift in Sources */,
 				BE3994B62ADDD5B600CDCF9C /* Character.swift in Sources */,
+				BE3994E22AE0287B00CDCF9C /* NetworkError.swift in Sources */,
 				BE3994CF2ADDEE2400CDCF9C /* Episode.swift in Sources */,
 				BE3994BF2ADDDD9100CDCF9C /* Location.swift in Sources */,
 				BE3994C52ADDDDCF00CDCF9C /* LocationsView.swift in Sources */,
